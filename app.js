@@ -38,6 +38,12 @@ app.get('/elements', (req, res) => {
     })
   });
 
+app.get('/salidas', (req, res) => {
+    res.render('salidas', {
+      nombre: 'Armando David Espinoza',
+      titulo: 'Curso de Node'
+    })
+  });
   
 
 app.get('*', (req, res)=> {
